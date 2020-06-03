@@ -1,0 +1,90 @@
+body{
+    background-color: #242424;
+    cursor: pointer;
+    overflow: hidden;
+}
+:root{
+    --color1:#f39b12;
+    --color2:#C13A2A;
+    --color3:#2C80B8;
+}
+.box-cards{
+    height: 500px;
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-cards .box{
+    background-color: #fff;
+    height: 450px;
+    width: 25%;
+    color: #fff;
+}
+.box1{
+    border-top: 8px solid var(--color1);
+    border-bottom:8px solid var(--color1); 
+    transform: translateX(-28em);
+    animation: primero .5s linear forwards;
+}
+.box2{
+    border-top: 8px solid var(--color2);
+    border-bottom:8px solid var(--color2);
+    transform: translateY(35em);
+    animation: primero .5s linear forwards;
+}
+.box3{
+    border-top: 8px solid var(--color3);
+    border-bottom:8px solid var(--color3);
+    transform: translateX(28em);
+    animation: primero .5s linear forwards;
+}
+.box img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.box .botton{
+    padding: 10px;
+    width: 60%;
+    font-family: sans-serif;
+    text-align: center;
+    margin: -20px auto;
+    transition: .3s;
+    display: block;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+.botton1{
+    background-color: var(--color1);
+}
+.botton2{
+    background-color: var(--color2);
+}
+.botton3{
+    background-color: var(--color3);
+}
+.box p{
+    font-family: sans-serif;
+    text-align: center;
+    color: #868686;
+    font-size: .9em;
+    width: 80%;
+    margin:50px auto;
+}
+.box:hover .botton{
+    transform: rotate(-10deg);
+}
+
+@keyframes primero{
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes segunda{
+    100%{
+        transform: translateY(0);
+    }
+}
